@@ -50,7 +50,10 @@ go_enrich.1 <- enrichGO(gene = genes_c1,
                       qvalueCutoff = 0.10)
 
 
-plot_com.1 <- dotplot(go_enrich.1)
+plot_com.1 <- dotplot(go_enrich.1) # Dotplot para visualizar
+
+
+# Lo mismo con todas las comunidades:
 
  
 #---- COMUNIDAD 2 ------ Sí
@@ -192,31 +195,6 @@ plot_com.9 <- dotplot(go_enrich.9)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-set.seed(1001) 
-plot(lc.BBC,
-     BBC,
-     edge.color = "black",
-     vertex.label.cex = 0.2, 
-     vertex.color = "blue", 
-     vertex.size = 4, 
-     edge.width = .2,  
-     edge.size = .2,
-     layout = layout.fruchterman.reingold)
 
 
 
